@@ -6,12 +6,7 @@
  </head>
  <body>
   <h1>Team Name: <%= params[:name] %></h1>
-  <h2>Coach: <%= params[:coach] %></h2>
-  <h2>Point Guard: <input type="text" name="pg"></p>
-      <p>Shooting Guard: <input type="text" name="sg"></p>
-      <p>Power Forward: <input type="text" name="pf"></p>
-      <p>Small Forward: <input type="text"name= "sf"></p>
-      <p>Center: <input type="text" name="c"></p>
+  <h2> <%= params.each do |k,v| %></h2>
  </body>
 </html>
 
