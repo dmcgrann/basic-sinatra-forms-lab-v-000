@@ -6,14 +6,7 @@
  </head>
  <body>
   <h1>Team Name: <%= params[:name] %></h1>
-  <h2> <% params.each do |k,v| %>
-        <% if k != "Team Name"
-           <% self.send("#{k}=", v) %>
-           <% end %>
-          <% end %>
-        <% end %>
-      <% end %>
-  </h2>
+  <h2> Coach: <%= params[:Coach] %></h2>
  </body>
 </html>
 
