@@ -9,10 +9,10 @@
   <h2> <% params.each do |k,v| %>
         <% if k != "Team Name"
            <% self.send("#{k}=", v) %>
-           
-            
-  
-  
+           <% end %>
+          <% end %>
+        <% end %>
+      <% end %>
   </h2>
  </body>
 </html>
