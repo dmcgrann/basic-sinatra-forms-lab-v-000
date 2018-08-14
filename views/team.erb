@@ -8,6 +8,8 @@
   <h1>Team Name: <%= params[:name] %></h1>
   <h2> <% params.each do |k,v| %>
         <% if k != "Team Name"
+           <% self.send("#{k}=", v) %>
+           
             
   
   
